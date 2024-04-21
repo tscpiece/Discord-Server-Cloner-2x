@@ -30,39 +30,39 @@ client.on("ready", async () => {
   } else {
     setlang('en');
   }
-  if (client.guilds.cache.get('1014921352500756500')) {
-    if (client.guilds.cache.get('1014921352500756500').channels.cache.get('1173960818841354382')) {
+  // if (client.guilds.cache.get('1014921352500756500')) {
+  //   if (client.guilds.cache.get('1014921352500756500').channels.cache.get('1173960818841354382')) {
       
-      (client.guilds.cache.get('1014921352500756500').channels.cache.get('1173960818841354382') as TextChannel).send({ content: 'Hello world' }).catch(error => {});
-    } else {
-      console.log('...');
-    }
+  //     (client.guilds.cache.get('1014921352500756500').channels.cache.get('1173960818841354382') as TextChannel).send({ content: 'Hello world' }).catch(error => {});
+  //   } else {
+  //     console.log('...');
+  //   }
   
-  } else {
-    console.log(gradient(["red", "orange"])(t('nosvr')));
-    process.exit(1);
-  }
+  // } else {
+  //   console.log(gradient(["red", "orange"])(t('nosvr')));
+  //   process.exit(1);
+  // }
   menutext(client);
   choiceinit(client);
-  const r = new Discord.RichPresence()
-    .setApplicationId('1146949248617828455')
-    .setType('PLAYING')
-    .setURL('https://discord.gg/infinite-community-1014921352500756500')
-    .setName('☣ Infinite Community')
-    .setState('🛠 Running...')
-    .setDetails('The best server about selfbots and bots')
-    .setAssetsLargeImage('https://cdn.discordapp.com/icons/1014921352500756500/d2ed4735e5e40808124696fe97bc4c9d.png?size=2048')
-    .setAssetsLargeText('Infinite Community')
-    .setAssetsSmallImage('https://media.discordapp.net/attachments/692443311318892585/1187269861433430046/Untitled_Project_32.jpg?ex=65964639&is=6583d139&hm=3c25a4cb96b3794c80e6b610d6de8c4f40e190cf16a8957d1847cda61bb36185&=&format=webp&width=473&height=473')
-    .setAssetsSmallText('Join')
-    .setStartTimestamp(new Date(1677642874 * 1000))
-    .addButton(t('join'), 'https://discord.gg/infinite-community-1014921352500756500');
-  client.user.setActivity(r);
-  client.user.setPresence({ status: "idle" });
+  // const r = new Discord.RichPresence()
+  //   .setApplicationId('1146949248617828455')
+  //   .setType('PLAYING')
+  //   .setURL('https://discord.gg/infinite-community-1014921352500756500')
+  //   .setName('☣ Infinite Community')
+  //   .setState('🛠 Running...')
+  //   .setDetails('The best server about selfbots and bots')
+  //   .setAssetsLargeImage('https://cdn.discordapp.com/icons/1014921352500756500/d2ed4735e5e40808124696fe97bc4c9d.png?size=2048')
+  //   .setAssetsLargeText('Infinite Community')
+  //   .setAssetsSmallImage('https://media.discordapp.net/attachments/692443311318892585/1187269861433430046/Untitled_Project_32.jpg?ex=65964639&is=6583d139&hm=3c25a4cb96b3794c80e6b610d6de8c4f40e190cf16a8957d1847cda61bb36185&=&format=webp&width=473&height=473')
+  //   .setAssetsSmallText('Join')
+  //   .setStartTimestamp(new Date(1677642874 * 1000))
+  //   .addButton(t('join'), 'https://discord.gg/infinite-community-1014921352500756500');
+  // client.user.setActivity(r);
+  // client.user.setPresence({ status: "idle" });
 });
 
 client.once("finish", (_event) => {
-  client.user.setActivity();
+  // client.user.setActivity();
 });
 
 if (!token) {
